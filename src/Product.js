@@ -20,8 +20,9 @@ function Product({ id, tittle, image, price, rating }) {
         rating: rating,
       },
     });
+    console.log("cart", basket);
   };
-  console.log("cart", basket);
+
   return (
     <div className="product">
       <strong>{tittle}</strong>

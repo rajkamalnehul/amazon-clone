@@ -44,6 +44,13 @@ function Home() {
               alt="Fourth slide"
             />
           </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="home_image"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonDevices/GW/Akai-GW-Banner_PC_1X._CB414374623_.jpg"
+              alt="Fourth slide"
+            />
+          </Carousel.Item>
         </Carousel>
       </div>
 

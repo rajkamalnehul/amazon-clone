@@ -4,13 +4,12 @@
   display: flex;
   padding: 20px;
   background-color: white;
-  height: 100vh;
+  height: max-content;
   width: 100%;
-
   justify-content: space-between;
 }
 .checkout_add {
-  width: 99%;
+  width: 100%;
   object-fit: cover;
   height: 80px;
 }
