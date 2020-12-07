@@ -47,7 +47,14 @@ function Home() {
           <Carousel.Item>
             <img
               className="home_image"
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonDevices/GW/Akai-GW-Banner_PC_1X._CB414374623_.jpg"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/Multititle/Nov/1500x600_Hero-Tall_np._CB416108473_.jpg"
+              alt="Fourth slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="home_image"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/SingleTitle/ZZZ/1500x600_Hero-Tall_ft._CB414368567_.jpg"
               alt="Fourth slide"
             />
           </Carousel.Item>
