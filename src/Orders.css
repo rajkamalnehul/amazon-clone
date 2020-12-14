@@ -1,0 +1,9 @@
+/** @format */
+
+.orders {
+  padding: 20px 150px;
+}
+
+.orders > h2 {
+  margin: 30px 0;
+}

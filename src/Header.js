@@ -13,7 +13,7 @@ function Header() {
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
-      console.log("user", user);
+      // console.log("user", user);
     }
   };
   return (
@@ -50,7 +50,9 @@ function Header() {
         </div>
         <div className="header_option">
           <span className="header_option_lineone">Returns</span>
-          <span className="header_option_linetwo">& Orders</span>
+          <Link to="/orders" style={{ color: "#FFF", textDecoration: "none" }}>
+            <span className="header_option_linetwo">& Orders</span>
+          </Link>
         </div>
         <div className="header_option">
           <span className="header_option_lineone">Try</span>
