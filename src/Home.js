@@ -66,21 +66,21 @@ function Home() {
           id={0}
           tittle="Mi TV 4A PRO 80 cm (32 inches) HD Ready Android LED TV (Black) | With Data Saver"
           image="https://images-eu.ssl-images-amazon.com/images/I/51usZonCf7L._AC_US218_FMwebp_QL70_.jpg"
-          price={20.2}
+          price={598.5}
           rating={4}
         />
         <Product
           id={1}
           tittle="Samsung 125cm(50 Inches) Wondertainment Series Ultra HD LED Smart TV(Titan Gray) "
           image="https://m.media-amazon.com/images/I/71CMPTwja5L._AC_UY218_.jpg"
-          price={20.2}
+          price={660.0}
           rating={5}
         />
         <Product
           id={2}
           tittle="Onida 108 cm (43 Inches) Fire TV Edition Full HD Smart IPS LED TV 43FIF (Black) (2019 Model)"
           image="https://images-eu.ssl-images-amazon.com/images/I/51eyH19iNFL._AC_US218_FMwebp_QL70_.jpg"
-          price={20.2}
+          price={483.2}
           rating={4}
         />
       </div>
@@ -89,28 +89,28 @@ function Home() {
           id={3}
           tittle="iBall Musi Cube X1 Portable Bluetooth Speaker"
           image="https://m.media-amazon.com/images/I/61gDxNyYOEL._AC_UY218_.jpg"
-          price={20.2}
+          price={108.2}
           rating={5}
         />
         <Product
           id={4}
           tittle="JBL GO Portable Wireless Bluetooth Speaker with Mic (Teal)"
           image="https://m.media-amazon.com/images/I/817TjAPJjvL._AC_UY218_.jpg"
-          price={20.2}
+          price={96.1}
           rating={5}
         />
         <Product
           id={5}
           tittle="Creative Pebble 2.0 USB-Powered Desktop Speakers"
           image="https://m.media-amazon.com/images/I/31lrbOsJ2qL._AC_UY218_.jpg"
-          price={20.2}
+          price={60.5}
           rating={5}
         />
         <Product
           id={6}
           tittle="Philips Portable Wireless Bluetooth Speaker, Blue"
           image="https://m.media-amazon.com/images/I/71wKZA5Vi8L._AC_UY218_.jpg"
-          price={20.2}
+          price={50.0}
           rating={5}
         />
       </div>
@@ -126,21 +126,21 @@ function Home() {
           id={7}
           tittle="Dell Inspiron 5300 13.3-inch FHD Laptop (10th Gen i5-10210U/8GB/512GB SSD/Win 10 + MS Office/Intel UHD Graphics)"
           image="https://m.media-amazon.com/images/I/61HYBKhx4BL._AC_UY218_.jpg"
-          price={20.2}
+          price={900}
           rating={5}
         />
         <Product
           id={8}
           tittle="Microsoft Surface GO 1-inch Laptop (Gold Processor 4425Y/8GB/128GB SSD/Windows 10 Home in S Mode/Intel UHD 615 Graphics)"
           image="https://m.media-amazon.com/images/I/61Ysjm+ObeL._AC_UY218_.jpg"
-          price={20.2}
+          price={980}
           rating={5}
         />
         <Product
           id={9}
           tittle="Dell XPS 9370 13.3-inch FHD Display Thin & Light Laptop (8th Gen i7-8550U/16GB/512GB SSD/Win 10 + MS Office/Integrated Graphics)"
           image="https://m.media-amazon.com/images/I/61fl1y0mHgL._AC_UY218_.jpg"
-          price={20.2}
+          price={800}
           rating={5}
         />
       </div>

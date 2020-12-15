@@ -20,6 +20,10 @@ import Orders from "./Orders.js";
 function App() {
   const [{}, dispatch] = useStateValue();
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   //it will keep track of whic user is signed in or not
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -62,6 +66,9 @@ function App() {
           <Route exact path="/">
             <Header />
             <Home />
+            <div className="footer" onClick={scrollTop}>
+              <small>Back to top</small>
+            </div>
           </Route>
         </Switch>
       </div>

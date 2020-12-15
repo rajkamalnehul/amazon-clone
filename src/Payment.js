@@ -18,7 +18,6 @@ function Payment() {
   const priceForStripe = getBasketTotal(basket) * 100;
 
   const onToken = (token) => {
-    console.log(token);
     alert("Payment Sucessfull");
     db.collection("users")
       .doc(user?.uid)
@@ -128,7 +127,6 @@ function Payment() {
               />
             </div>
             <StripeCheckout
-              lable="Buy Now"
               name="AMAZON"
               billingAddress
               shippingAddress
