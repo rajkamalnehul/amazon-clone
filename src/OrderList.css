@@ -31,3 +31,8 @@
   margin-right: 15px;
   cursor: pointer;
 }
+
+#mouse_popover {
+  color: rgb(62, 62, 204);
+  text-decoration: underline;
+}

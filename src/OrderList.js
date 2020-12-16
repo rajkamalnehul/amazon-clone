@@ -7,6 +7,7 @@ import CheckoutProduct from "./CheckoutProduct";
 import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { useStateValue } from "./StateProvider";
 
 const useStyles = makeStyles((theme) => ({
   popover: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 function OrderList({ order }) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [{ user }] = useStateValue();
 
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -53,7 +55,7 @@ function OrderList({ order }) {
               onMouseEnter={handlePopoverOpen}
               onMouseLeave={handlePopoverClose}
             >
-              <small>{order.data.name}</small>
+              <small id="mouse_popover">{order.data.name}</small>
             </Typography>
             <Popover
               id="mouse-over-popover"

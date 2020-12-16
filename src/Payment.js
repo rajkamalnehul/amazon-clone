@@ -10,6 +10,7 @@ import { getBasketTotal } from "./reducer";
 import { useHistory } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
 import { db } from "./firebase";
+import { Button } from "@material-ui/core";
 //import axios from "./axios";
 
 function Payment() {
@@ -38,6 +39,14 @@ function Payment() {
       type: "EMPTY_BASKET",
     });
     history.replace("/orders");
+  };
+
+  const disabledButton = () => {
+    if (!user) {
+      alert("Sign In to Pay");
+    } else {
+      alert("no products added");
+    }
   };
   //const stripe = useStripe();
   //const elements = useElements();
@@ -126,17 +135,28 @@ function Payment() {
                 prefix={"$"}
               />
             </div>
-            <StripeCheckout
-              name="AMAZON"
-              billingAddress
-              shippingAddress
-              description={`Total Amount $${getBasketTotal(basket)}`}
-              amount={priceForStripe}
-              panelLabel="Pay Now"
-              token={onToken}
-              currency="USD"
-              stripeKey="pk_test_51Hvd6KHsdJ1AoFuFoYEInPcEoGQDo7SjAvjq3LSmGTYYruBNSiBbd6Rtbd5iLDDqksGSfNWzju7Eeqy8S8VuLd4U0047PfGMKA"
-            />
+            {user && basket.length ? (
+              <StripeCheckout
+                name="AMAZON"
+                billingAddress
+                shippingAddress
+                description={`Total Amount $${getBasketTotal(basket)}`}
+                amount={priceForStripe}
+                panelLabel="Pay Now"
+                token={onToken}
+                currency="USD"
+                stripeKey="pk_test_51Hvd6KHsdJ1AoFuFoYEInPcEoGQDo7SjAvjq3LSmGTYYruBNSiBbd6Rtbd5iLDDqksGSfNWzju7Eeqy8S8VuLd4U0047PfGMKA"
+              />
+            ) : (
+              <Button
+                variant="contained"
+                color="default"
+                onClick={disabledButton}
+              >
+                Pay With Card
+              </Button>
+            )}
+
             {/*  <form onSubmit={handlePayment}>
               <CardElement onChange={handleChange} />
               <div className="price">
